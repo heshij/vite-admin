@@ -1,10 +1,10 @@
 {
-  "name": "vben-admin",
+  "name": "vite-admin",
   "version": "2.6.1",
   "author": {
-    "name": "vben",
-    "email": "anncwb@126.com",
-    "url": "https://github.com/anncwb"
+    "name": "heshij",
+    "email": "1634943446@qq.com",
+    "url": ""
   },
   "scripts": {
     "bootstrap": "yarn install",
