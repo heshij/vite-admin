@@ -1,9 +1,16 @@
 <template>
-  <h2 class="mb-3 text-2xl font-bold text-center xl:text-3xl enter-x xl:text-left">
-    {{ getFormTitle }}
-  </h2>
+  <div class="flex justify-between items-center relative p-4">
+    <span class="w-1/2 h-full -enter-x">
+      <AppLogo :alwaysShowTitle="true" />
+    </span>
+    <h2 class="text-2xl font-bold text-center xl:text-2xl enter-x xl:text-left xl:my-0 md:!my-0">
+      {{ getFormTitle }}
+    </h2>
+  </div>
 </template>
 <script lang="ts">
+  import { AppLogo } from '/@/components/Application';
+
   import { defineComponent, computed, unref } from 'vue';
 
   import { useI18n } from '/@/hooks/web/useI18n';
@@ -11,6 +18,9 @@
 
   export default defineComponent({
     name: 'LoginFormTitle',
+    components: {
+      AppLogo,
+    },
     setup() {
       const { t } = useI18n();
 
